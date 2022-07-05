@@ -1,0 +1,13 @@
+Loading data
+CLASS WILD
+IN WILD TASKS
+IN WILD TASKS
+IN WILD TASKS
+classes nb: 10 number of train models:  2516 number of test models:  198 10
+Using mvcnn18
+Running on 0
+{'data_dir': None, 'run_mode': 'train', 'mvnetwork': 'mvcnn', 'nb_views': 12, 'views_config': 'spherical', 'gpu': 0, 'dset_variant': 'obj_only', 'pc_rendering': 1, 'object_color': 'white', 'epochs': 100, 'batch_size': 8, 'resume': 0, 'viewgcn_phase': 'all', 'config_file': './shrec22_config/config_mv_wild_01.yaml', 'task': 'wild', 'nb_points': 2048, 'save_all': 1, 'exp_set': 'wild_mv', 'exp_id': '01', 'renderings_dir': 'results/wild_mv/01/renderings', 'results_dir': 'results/wild_mv/01', 'logs_dir': 'results/wild_mv/01/logs', 'cameras_dir': 'results/wild_mv/01/cameras', 'return_points_sampled': 1, 'return_points_saved': 0, 'rotated_test': 0, 'rotated_train': 0, 'simplified_mesh': 1, 'cleaned_mesh': 1, 'dset_norm': '2', 'image_size': 224, 'light_direction': 'random', 'cull_backfaces': 0, 'points_radius': 0.006, 'points_per_pixel': 1, 'faces_per_pixel': 1, 'background_color': 'white', 'canonical_elevation': 30.0, 'canonical_distance': 2.2, 'input_view_noise': 0.0, 'mvtn_learning_rate': 0.0001, 'mvtn_weight_decay': 0.01, 'clip_grads': 1, 'mvtn_clip_grads_value': 30.0, 'shape_extractor': 'PointNet', 'features_type': 'logits', 'transform_distance': 0, 'screatch_feature_extractor': 0, 'learning_rate': 0.001, 'weight_decay': 0.01, 'momentum': 0.9, 'lr_decay_freq': 70, 'lr_decay': 0.1, 'print_freq': 50, 'pretrained': 1, 'depth': 18, 'view_reg': 0.0, 'augment_training': 0, 'crop_ratio': 0.3, 'ignore_normalize': 0, 'resume_mvtn': 0, 'first_stage_bs': 400, 'first_stage_epochs': 30, 'resume_first': 1, 'resume_second': 0, 'log_metrics': 1, 'plot_freq': 3, 'LFDA_dimension': 64, 'LFDA_layer': 0, 'max_degs': 180, 'repeat_exp': 3, 'features_size': 40, 'verts_dir': 'results/wild_mv/01/verts', 'checkpoint_dir': 'results/wild_mv/01/checkpoint', 'features_dir': 'results/wild_mv/01/features', 'feature_file': 'results/wild_mv/01/features/features_training.npy', 'targets_file': 'results/wild_mv/01/features/targets_training.npy', 'best_acc': 0.0, 'best_loss': 0.0, 'start_epoch': 0, 'results_file': 'results/wild_mv/01/01_accuracy.csv', 'views_file': 'results/wild_mv/01/01_views.csv', 'weights_file': 'results/wild_mv/01/checkpoint/01_checkpoint.pt', 'is_learning_views': 0, 'is_learning_points': 0}
+
+-----------------------------------
+Epoch: [1/100]
+slurmstepd: error: *** JOB 21852346 ON gv012 CANCELLED AT 2022-07-04T14:55:02 ***

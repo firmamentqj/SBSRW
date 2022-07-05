@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "run_shrec22.py", line 37, in <module>
+    from custom_dataset import ModelNet40, collate_fn, ShapeNetCore, ScanObjectNN
+ModuleNotFoundError: No module named 'custom_dataset'

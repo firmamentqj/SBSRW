@@ -1,0 +1,18 @@
+nb_points : 2048 # number of points in the 3d dataeset sampled from the meshes if `return_points_sampled` == `True`
+save_all : true  # help='save save the checkpoint and results at every epoch.... default saves only best test accuracy epoch'
+exp_set : "cad_pc"  # help='pick '
+exp_id : "01"  # help='pick '
+renderings_dir : "renderings"  # help='the destinatiojn for the renderings '
+results_dir : "results"  # help='the destinatiojn for the results '
+logs_dir : "logs"  # help='the destinatiojn for the tensorboard logs '
+cameras_dir : "cameras"  # help='the destination for the 3D plots of the cameras '
+features_type : "logits"  # help='the type of the features extracted from the feature extractor ( early , middle , late) '
+learning_rate : 0.001  # help='initial learning rate (default: 0.0001)'
+weight_decay : 0.01  # help='weight decay for MVTN ... default 0.01'
+momentum : 0.9  # help='momentum (default: 0.9)'
+lr_decay_freq : 80  # help='learning rate decay frequencey(default: 30)'
+lr_decay : 0.1  # help='learning rate decay (default: 0.1)'
+print_freq : 50  # help='print frequency (default: 10)'
+pretrained : true  # help='use pre-trained CNN for the multi-view network '
+depth : 18  # help='resnet depth (default: resnet18) for the CNN' choices: [18, 34, 50, 101, 152]
+log_metrics : true  # help='logs loss and acuracy and other metrics in `logs_dir` for tensorboard '
