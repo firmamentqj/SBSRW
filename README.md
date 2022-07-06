@@ -1,6 +1,6 @@
 ## **[SHREC 2022](http://www.google.com/url?q=http%3A%2F%2Fwww.shrec.net%2F&sa=D&sntz=1&usg=AOvVaw3ig8bD6ChvnwYhTkC_hLXm)** Track: Sketch-Based 3D Shape Retrieval in the Wild
 
-[[homepage](https://sites.google.com/site/firmamentqj/sbsrw)] [paper] [[code](https://github.com/firmamentqj/SBSRW)] [[stuff](https://drive.google.com/drive/folders/1vsIxSx3UAYOB84UddCRFRnnm0N49Q4xr)]
+[[homepage](https://sites.google.com/site/firmamentqj/sbsrw)] [paper] [[datasets](https://drive.google.com/drive/folders/1vsIxSx3UAYOB84UddCRFRnnm0N49Q4xr)]
 
 Organizers: [Jie Qin](https://sites.google.com/site/firmamentqj/), [Shuaihang Yuan](https://shalexyuan.github.io/), [Jiaxin Chen](https://scholar.google.pl/citations?user=eNlGf7EAAAAJ&hl=en), [Boulbaba Ben Amor](https://sites.google.com/site/bbenamorshomepage1/), [Yi Fang](https://scholar.google.com/citations?user=j-cyhzwAAAAJ&hl=en).
 
@@ -19,7 +19,7 @@ Organizers: [Jie Qin](https://sites.google.com/site/firmamentqj/), [Shuaihang Yu
 
 ### Datasets
 
-Visit our [google-drive folder](https://drive.google.com/drive/folders/1vsIxSx3UAYOB84UddCRFRnnm0N49Q4xr) for all stuff:
+Visit our [google-drive folder](https://drive.google.com/drive/folders/1vsIxSx3UAYOB84UddCRFRnnm0N49Q4xr) for all data:
 
 + [CAD](https://drive.google.com/drive/folders/1iEP41h83ja3HVAY-E_q3-FI-WtsugjYP?usp=sharing), [WILD](https://drive.google.com/drive/folders/17FqklbpYLszNAWNzeXn-JDLrn-v_lkJh?usp=sharing), [Samples](https://drive.google.com/drive/folders/1Hock5jQiObq8xaji0MGYt2JTqlcDXMt7?usp=sharing), [Evaluation](https://drive.google.com/file/d/1q4UyvH4Rqiekvj3n0LI0Y0fjz9ZxtZML/view?usp=sharing).
 
