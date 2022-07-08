@@ -28,9 +28,6 @@ Visit our [google-drive folder](https://drive.google.com/drive/folders/1vsIxSx3U
 ## Run
 
 #### Baselines:
-![408](https://user-images.githubusercontent.com/8998408/177905328-3d7a84dd-0b08-468b-9055-131614fde4d0.png)
-
-#### Baselines:
 
 ##### Baseline-MV
 
