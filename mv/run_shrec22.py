@@ -90,9 +90,9 @@ else:
     classes = 10
 torch.cuda.set_device(int(setup["gpu"]))
 
-dset_train = SHREC22("train", setup["task"])
-dset_val_sketch = SHREC22("test_sketch", setup["task"])
-dset_val_shape = SHREC22("test_shape", setup["task"])
+dset_train = SHREC22("train", setup["task"],setup["data_pth"])
+dset_val_sketch = SHREC22("test_sketch", setup["task"],setup["data_pth"])
+dset_val_shape = SHREC22("test_shape", setup["task"],setup["data_pth"])
 
 train_loader = DataLoader(dset_train, batch_size=setup["batch_size"],
                           shuffle=True, num_workers=6, collate_fn=collate_fn, drop_last=True)
@@ -328,7 +328,7 @@ if setup["run_mode"] == "test":
     shape_feat = shape_feat.cpu().detach().numpy()
     sketch_feat = sketch_feat.cpu().detach().numpy()
 
-    np.savetxt("/scratch/sy2366/view/MVTN/results/"+setup["exp_set"]+"/"+setup["exp_id"]+"/shape_feat_mv_"+setup["task"]+".npz", shape_feat)
-    np.savetxt("/scratch/sy2366/view/MVTN/results/" + setup["exp_set"] + "/" + setup["exp_id"] + "/sketch_feat_mv_"+setup["task"]+".npz",sketch_feat)
+    np.savetxt("./results/"+setup["exp_set"]+"/"+setup["exp_id"]+"/shape_feat_mv_"+setup["task"]+".npz", shape_feat)
+    np.savetxt("./results/" + setup["exp_set"] + "/" + setup["exp_id"] + "/sketch_feat_mv_"+setup["task"]+".npz",sketch_feat)
     print('Time taken: %.2f sec.' % (time.time() - start))
     print('\nDone:')

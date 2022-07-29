@@ -17,23 +17,21 @@ from pytorch3d.renderer.mesh import Textures
 from torch.utils.data import DataLoader
 
 class SHREC22(data.Dataset):
-    def __init__(self, mode,task):
+    def __init__(self, mode,task,data_pth):
         self.dset_norm = 2
         self.mode = mode
         self.sampled_points = 2048
 
         if task=="cad":
-            print("IN CAD TASKS")
-            train_sketch_path = "/scratch/sy2366/data/parsedSHREC22/sketch/shrec22_cad_train_sketch.h5"
-            test_sketch_path = "/scratch/sy2366/data/parsedSHREC22/sketch/shrec22_cad_test_sketch.h5"
-            model_path = "/scratch/sy2366/data/parsedSHREC22/model/shrec22_model_cad_train.h5"
-            model_test_path="/scratch/sy2366/data/parsedSHREC22/model/shrec22_model_cad_test.h5"
+            train_sketch_path = os.path.join(data_pth,'shrec22_cad_train_sketch.h5')
+            test_sketch_path = os.path.join(data_pth,'shrec22_cad_test_sketch.h5')
+            model_path = os.path.join(data_pth,'shrec22_model_cad_train.h5')
+            model_test_path=os.path.join(data_pth,'shrec22_model_cad_test.h5')
         else:
-            print("IN WILD TASKS")
-            train_sketch_path = "/scratch/sy2366/data/parsedSHREC22/sketch/shrec22_wild_train_sketch.h5"
-            test_sketch_path = "/scratch/sy2366/data/parsedSHREC22/sketch/shrec22_wild_test_sketch.h5"
-            model_path = "/scratch/sy2366/data/parsedSHREC22/model/shrec22_model_wild.h5"
-            model_test_path="/scratch/sy2366/data/parsedSHREC22/model/shrec22_model_wild.h5"
+            train_sketch_path = os.path.join(data_pth,'shrec22_wild_train_sketch.h5')
+            test_sketch_path = os.path.join(data_pth,'shrec22_wild_test_sketch.h5')
+            model_path = os.path.join(data_pth,'shrec22_model_wild.h5')
+            model_test_path=os.path.join(data_pth,'shrec22_model_wild.h5')
 
         if mode== 'train':
             self.sketches, self.sketch_labels,self.sid = load_all_sketch_h5(train_sketch_path)

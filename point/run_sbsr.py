@@ -61,15 +61,17 @@ print('Loading data')
 
 torch.cuda.set_device(int(setup["gpu"]))
 
-dset_train = SHREC22("train", setup["task"])
-dset_val_sketch = SHREC22("test_sketch", setup["task"])
-dset_val_shape = SHREC22("test_shape", setup["task"])
+dset_train = SHREC22("train", setup["task"],setup["data_pth"])
+dset_val_sketch = SHREC22("test_sketch", setup["task"],setup["data_pth"])
+dset_val_shape = SHREC22("test_shape", setup["task"],setup["data_pth"])
+
 if setup["task"]=="cad":
     print("CLASS CAD")
     classes = 44
 else:
     print("CLASS WILD")
     classes = 10
+
 train_loader = DataLoader(dset_train, batch_size=setup["batch_size"],
                           shuffle=True, num_workers=6, collate_fn=collate_fn, drop_last=True)
 
@@ -253,8 +255,8 @@ if setup["run_mode"] == "test":
     shape_feat = shape_feat.cpu().detach().numpy()
     sketch_feat = sketch_feat.cpu().detach().numpy()
 
-    np.savetxt("/scratch/sy2366/view/semantic/results/"+setup["exp_set"]+"/"+setup["exp_id"]+"/shape_feat.npz", shape_feat)
-    np.savetxt("/scratch/sy2366/view/semantic/results/" + setup["exp_set"] + "/" + setup["exp_id"] + "/sketch_feat.npz",sketch_feat)
+    np.savetxt("./results/"+setup["exp_set"]+"/"+setup["exp_id"]+"/shape_feat.npz", shape_feat)
+    np.savetxt("./results/" + setup["exp_set"] + "/" + setup["exp_id"] + "/sketch_feat.npz",sketch_feat)
     print('Time taken: %.2f sec.' % (time.time() - start))
     print('\nDone:')
 

@@ -1,3 +1,4 @@
+data_pth : ./dataset
 nb_points : 2048 # number of points in the 3d dataeset sampled from the meshes if `return_points_sampled` == `True`
 save_all : true  # help='save save the checkpoint and results at every epoch.... default saves only best test accuracy epoch'
 exp_set : "wild_mv"  # help='pick '

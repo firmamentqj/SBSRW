@@ -34,15 +34,15 @@ Visit our [google-drive folder](https://drive.google.com/drive/folders/1vsIxSx3U
 ##### Baseline-MV
 
 ```shell
-sh baseline-mv/shrec22_script/train_mv_cad.sh
-sh baseline-mv/shrec22_script/train_mv_wild.sh
+sh mv/shrec22_script/train_mv_cad.sh
+sh mv/shrec22_script/train_mv_wild.sh
 ```
 
 ##### Baseline-Point (Baseline-PC)
 
 ```shell
-sh baseline-point/shrec22_script/train_mv_cad_01.sh
-sh baseline-point/shrec22_script/train_mv_wild_01.sh
+sh point/shrec22_script/train_pc_cad_01.sh
+sh point/shrec22_script/train_pc_wild_01.sh
 ```
 
 Checkpoints of baselines can be found [here](https://drive.google.com/drive/folders/1B5fE20eE078SWEE1HHKgxgNdyr2QW6rV?usp=sharing).
