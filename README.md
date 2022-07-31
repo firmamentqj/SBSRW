@@ -71,7 +71,7 @@ cd mv
 ##### Baseline-Point (Baseline-PC)
 
 ```shell
-cd mv
+cd point
 ./shrec22_script/test_pc_cad_01.sh
 ./shrec22_script/test_pc_wild_01.sh
 ```
