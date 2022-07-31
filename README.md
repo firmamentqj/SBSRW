@@ -79,7 +79,7 @@ cd point
 #### Evaluation & plots
 Download the GT files from the same [google-drive folder](https://drive.google.com/drive/folders/1ehIBQG-2C3RHGkJvoBzXTiJNd3xZpbTA) and set their paths correctly in notebook.
 
-Download the pretrained weights from our release, then
+Download the pretrained weights from our [release](https://github.com/firmamentqj/SBSRW/releases/tag/v0.1), then
 ```shell
 mv  checkpoints/checkpoint_mv mv/checkpoint
 mv  checkpoints/checkpoint_point point/checkpoint
