@@ -29,25 +29,61 @@ Visit our [google-drive folder](https://drive.google.com/drive/folders/1vsIxSx3U
 
 ## Run
 
-#### Baselines:
+### Set up Env
+```shell
+conda env create -f environment.yml
+```
+
+### Download Dataset
+
+Download all the files from our [google-drive](https://drive.google.com/drive/folders/1ehIBQG-2C3RHGkJvoBzXTiJNd3xZpbTA) and put them into `SBSRW/dataset`.
+
+#### Training
 
 ##### Baseline-MV
 
 ```shell
-sh mv/shrec22_script/train_mv_cad.sh
-sh mv/shrec22_script/train_mv_wild.sh
+cd mv
+./shrec22_script/train_mv_cad.sh
+./shrec22_script/train_mv_wild.sh
 ```
 
 ##### Baseline-Point (Baseline-PC)
 
 ```shell
-sh point/shrec22_script/train_pc_cad_01.sh
-sh point/shrec22_script/train_pc_wild_01.sh
+cd point
+./shrec22_script/train_pc_cad_01.sh
+./shrec22_script/train_pc_wild_01.sh
 ```
 
 Checkpoints of baselines can be found [here](https://drive.google.com/drive/folders/1B5fE20eE078SWEE1HHKgxgNdyr2QW6rV?usp=sharing).
 
+#### Test
+
+##### Baseline-MV
+
+```shell
+cd mv
+./shrec22_script/test_mv_cad.sh
+./shrec22_script/test_mv_wild.sh
+```
+
+##### Baseline-Point (Baseline-PC)
+
+```shell
+cd mv
+./shrec22_script/test_pc_cad_01.sh
+./shrec22_script/test_pc_wild_01.sh
+```
+
 #### Evaluation & plots
+Download the GT files from the same [google-drive folder](https://drive.google.com/drive/folders/1ehIBQG-2C3RHGkJvoBzXTiJNd3xZpbTA) and set their paths correctly in notebook.
+
+Download the pretrained weights from our release, then
+```shell
+mv  checkpoints/checkpoint_mv mv/checkpoint
+mv  checkpoints/checkpoint_point point/checkpoint
+```
 
 Check the `3d_sketch_eval.ipynb` or the online [colab](https://colab.research.google.com/drive/1Baon_b4QAE3kL-RpQDbgaFdu9T8rkInH#scrollTo=G2Y24ZE8s0lM).
 

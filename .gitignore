@@ -1,6 +1,10 @@
 # Custom
 .vscode
-
+*/checkpoint
+checkpoints
+dataset
+*.txt
+*.zip
 
 
 # Byte-compiled / optimized / DLL files
