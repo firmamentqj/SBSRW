@@ -86,9 +86,9 @@ Run the online [Colab-evaluation](https://colab.research.google.com/drive/1Baon_
 ### How to reproduce the results of Task 2 (Fig.12 (b) and Fig.13(b))?
 1. If you have no new test results (i.e., distance matrices), please directly run the codes in [Colab-plot_PR_results](https://colab.research.google.com/drive/1Baon_b4QAE3kL-RpQDbgaFdu9T8rkInH#scrollTo=G2Y24ZE8s0lM).
 2. If you have newly generated results (i.e., distance matrices), please follow the steps below to perform evaluation:
-1). Follow the **test part** to produce your distance matrices.
-2). **Upload your distance matrices** (.npy files) to our [google-drive folder](https://drive.google.com/drive/folders/15JV7IANbi06y5VIknrrn_Oqf3JJeDeJV) as `team_5_TMP/submission/Task 1/task1.npy` and `team_5_TMP/submission/Task 2/task2.npy` or similar formats, and add these two paths into **distM_filenames**.
-3). Run [Colab-plot_PR_results](https://colab.research.google.com/drive/1RDehAjW_RZ4eYGs__C6wJF8gD3vE60QV#scrollTo=Cjn7alri4L7R) to see and save the figure of plots.
+1). Follow the **test part** to produce your distance matrices.  
+2). **Upload your distance matrices** (.npy files) to our [google-drive folder](https://drive.google.com/drive/folders/15JV7IANbi06y5VIknrrn_Oqf3JJeDeJV) as `team_5_TMP/submission/Task 1/task1.npy` and `team_5_TMP/submission/Task 2/task2.npy` or similar formats, and add these two paths into **distM_filenames**.  
+3). Run [Colab-plot_PR_results](https://colab.research.google.com/drive/1RDehAjW_RZ4eYGs__C6wJF8gD3vE60QV#scrollTo=Cjn7alri4L7R) to see and save the figure of plots.  
 
 
 ### Leaderboard
