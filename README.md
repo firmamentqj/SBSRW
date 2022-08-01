@@ -27,9 +27,8 @@ Visit our [google-drive folder](https://drive.google.com/drive/folders/1vsIxSx3U
 
 ![Baselines](Baselines_large.png)
 
-## Run
 
-### Set up Env
+### Set up Conda virtual environment
 ```shell
 conda env create -f environment.yml
 ```
@@ -38,9 +37,9 @@ conda env create -f environment.yml
 
 Download all the files from our [google-drive](https://drive.google.com/drive/folders/1ehIBQG-2C3RHGkJvoBzXTiJNd3xZpbTA) and put them into `SBSRW/dataset`.
 
-#### Training
+### Train
 
-##### Baseline-MV
+#### Baseline-MV
 
 ```shell
 cd mv
@@ -48,7 +47,7 @@ cd mv
 ./shrec22_script/train_mv_wild.sh
 ```
 
-##### Baseline-Point (Baseline-PC)
+#### Baseline-Point (Baseline-PC)
 
 ```shell
 cd point
@@ -56,28 +55,7 @@ cd point
 ./shrec22_script/train_pc_wild_01.sh
 ```
 
-Checkpoints of baselines can be found [here](https://drive.google.com/drive/folders/1B5fE20eE078SWEE1HHKgxgNdyr2QW6rV?usp=sharing).
-
-#### Test
-
-##### Baseline-MV
-
-```shell
-cd mv
-./shrec22_script/test_mv_cad.sh
-./shrec22_script/test_mv_wild.sh
-```
-
-##### Baseline-Point (Baseline-PC)
-
-```shell
-cd point
-./shrec22_script/test_pc_cad_01.sh
-./shrec22_script/test_pc_wild_01.sh
-```
-
-#### Evaluation & plots
-Download the GT files from the same [google-drive folder](https://drive.google.com/drive/folders/1ehIBQG-2C3RHGkJvoBzXTiJNd3xZpbTA) and set their paths correctly in notebook.
+### Test (to generate distance matrices)
 
 Download the pretrained weights from our [release](https://github.com/firmamentqj/SBSRW/releases/tag/v0.1), then
 ```shell
@@ -85,10 +63,34 @@ mv  checkpoints/checkpoint_mv mv/checkpoint
 mv  checkpoints/checkpoint_point point/checkpoint
 ```
 
+#### Generate distance matrix using Baseline-MV
+
+```shell
+cd mv
+./shrec22_script/test_mv_cad.sh
+./shrec22_script/test_mv_wild.sh
+```
+
+#### Generate distance matrix using Baseline-Point (Baseline-PC)
+
+```shell
+cd point
+./shrec22_script/test_pc_cad_01.sh
+./shrec22_script/test_pc_wild_01.sh
+```
+
+#### Evaluation
+
+```
+
 Check the `3d_sketch_eval.ipynb` or the online [colab](https://colab.research.google.com/drive/1Baon_b4QAE3kL-RpQDbgaFdu9T8rkInH#scrollTo=G2Y24ZE8s0lM).
 
-> Due to the large file of results provided in Task-1 (MV), the program will cost about 11GB RAM, which is a little bit lower than that of the free accounts.
-
+### How to reproduce the results of Task 2 (Fig.12 (b) and Fig.13(b))?
+1. If you have no new test results (i.e., distance matrices), please directly run the codes in [colab](https://colab.research.google.com/drive/1Baon_b4QAE3kL-RpQDbgaFdu9T8rkInH#scrollTo=G2Y24ZE8s0lM).
+2. If you have newly generated results (i.e., distance matrices), please follow the steps below to perform evaluation:
+1)
+2)
+3)
 
 
 ### Leaderboard

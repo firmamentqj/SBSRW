@@ -25,13 +25,13 @@ class SHREC22(data.Dataset):
         if task=="cad":
             train_sketch_path = os.path.join(data_pth,'shrec22_cad_train_sketch.h5')
             test_sketch_path = os.path.join(data_pth,'shrec22_cad_test_sketch.h5')
-            model_path = os.path.join(data_pth,'shrec22_model_cad_train.h5')
-            model_test_path=os.path.join(data_pth,'shrec22_model_cad_test.h5')
+            model_path = os.path.join(data_pth,'shrec22_cad_train_model.h5')
+            model_test_path=os.path.join(data_pth,'shrec22_cad_test_model.h5')
         else:
             train_sketch_path = os.path.join(data_pth,'shrec22_wild_train_sketch.h5')
             test_sketch_path = os.path.join(data_pth,'shrec22_wild_test_sketch.h5')
-            model_path = os.path.join(data_pth,'shrec22_model_wild.h5')
-            model_test_path=os.path.join(data_pth,'shrec22_model_wild.h5')
+            model_path = os.path.join(data_pth,'shrec22_wild_model.h5')
+            model_test_path=os.path.join(data_pth,'shrec22_wild_model.h5')
 
         if mode== 'train':
             self.sketches, self.sketch_labels,self.sid = load_all_sketch_h5(train_sketch_path)

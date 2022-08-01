@@ -764,7 +764,7 @@ def check_folder(data_dir):
     checks if folder exists and create if doesnt exist 
     """
     if not os.path.exists(data_dir):
-        os.mkdir(data_dir)
+        os.makedirs(data_dir, exist_ok=True)
 
 
 
