@@ -81,8 +81,6 @@ cd point
 
 #### Evaluation
 
-```
-
 Check the `3d_sketch_eval.ipynb` or the online [colab](https://colab.research.google.com/drive/1Baon_b4QAE3kL-RpQDbgaFdu9T8rkInH#scrollTo=G2Y24ZE8s0lM).
 
 ### How to reproduce the results of Task 2 (Fig.12 (b) and Fig.13(b))?
