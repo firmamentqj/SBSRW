@@ -55,8 +55,6 @@ dependencies:
   - pyparsing=3.0.4=pyhd3eb1b0_0
   - python=3.7.11=h12debd9_0
   - python-dateutil=2.8.2=pyhd3eb1b0_0
-  - pytorch=1.7.1=py3.7_cuda10.2.89_cudnn7.6.5_0
-  - pytorch3d=0.4.0=py37_cu102_pyt171
   - pytz=2021.3=pyhd3eb1b0_0
   - pyyaml=5.1.2=py37h516909a_1
   - readline=8.1.2=h7f8727e_1
