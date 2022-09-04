@@ -51,8 +51,8 @@ cd mv
 
 ```shell
 cd point
-./shrec22_script/train_pc_cad_01.sh
-./shrec22_script/train_pc_wild_01.sh
+./shrec22_script/train_pc_cad.sh
+./shrec22_script/train_pc_wild.sh
 ```
 
 ### Test (to generate distance matrices)
@@ -75,8 +75,8 @@ cd mv
 
 ```shell
 cd point
-./shrec22_script/test_pc_cad_01.sh
-./shrec22_script/test_pc_wild_01.sh
+./shrec22_script/test_pc_cad.sh
+./shrec22_script/test_pc_wild.sh
 ```
 
 ### Evaluation (Online and no need to download any file)

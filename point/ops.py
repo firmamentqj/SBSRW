@@ -259,8 +259,7 @@ def load_sketchhead(sketch_head, weights_file):
 def load_checkpoint(setup, shape_head,sketch_head,optimizer, weights_file):
 
     print('\n==> Loading checkpoint..')
-    assert os.path.isfile(weights_file
-                          ), 'Error: no checkpoint file found!'
+    assert os.path.isfile(weights_file), 'Error: no checkpoint file found!'
 
     checkpoint = torch.load(weights_file)
     setup["best_acc"] = checkpoint['best_acc']

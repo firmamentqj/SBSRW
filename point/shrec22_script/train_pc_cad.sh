@@ -1,3 +1,5 @@
+#!/bin/bash
+
 python run_sbsr.py \
       --run_mode train \
       --batch_size 20 \

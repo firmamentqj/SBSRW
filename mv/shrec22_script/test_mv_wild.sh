@@ -1,3 +1,4 @@
+#!/bin/bash
 
 python run_shrec22.py \
       --config_file ./shrec22_config/config_mv_wild_01.yaml \
