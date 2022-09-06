@@ -28,8 +28,13 @@ Visit our [google-drive folder](https://drive.google.com/drive/folders/1vsIxSx3U
 ![Baselines](Baselines_large.png)
 
 
-### Set up Conda virtual environment
+### Platform
 ```shell
+# Device
+Tesla V100 GPU, CUDA 10.2
+# Key Libs
+Python 3.7.11, PyTorch 1.7.1, PyTorch3d 0.4.0
+# Set up Conda virtual environment
 conda env create -f environment.yml
 ```
 
@@ -41,6 +46,8 @@ Download all the files from our [google-drive](https://drive.google.com/drive/fo
 
 ##### Baseline-MV
 
+Pretrained-backbone is not used in baseline-mv.
+
 ```shell
 cd mv
 ./shrec22_script/train_mv_cad.sh
@@ -49,7 +56,7 @@ cd mv
 
 ##### Baseline-Point (Baseline-PC)
 
-Download the *pretrained weights* [here](https://drive.google.com/drive/folders/12ioONem_qQNIaOLufYO1GiCeS1XqCYNC) and put them into point/checkpoint.
+Download the *pretrained backbone weights* [here](https://drive.google.com/drive/folders/12ioONem_qQNIaOLufYO1GiCeS1XqCYNC) and put them into point/checkpoint.
 
 ```shell
 cd point
