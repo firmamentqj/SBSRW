@@ -66,6 +66,8 @@ cd point
 
 ### Test (to generate distance matrices)
 
+Download the well-trained weights of two methods for two tasks [here](https://drive.google.com/drive/folders/1BPS2xdCBnCyjWD7tCC_LH33e88lmoGgw).
+
 ##### Generate distance matrix using Baseline-MV
 
 ```shell
