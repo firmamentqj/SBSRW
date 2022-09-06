@@ -49,6 +49,8 @@ cd mv
 
 ##### Baseline-Point (Baseline-PC)
 
+Download the *pretrained weights* [here](https://drive.google.com/drive/folders/12ioONem_qQNIaOLufYO1GiCeS1XqCYNC) and put them into point/checkpoint.
+
 ```shell
 cd point
 ./shrec22_script/train_pc_cad.sh
@@ -56,12 +58,6 @@ cd point
 ```
 
 ### Test (to generate distance matrices)
-
-Download the pretrained weights from our [release](https://github.com/firmamentqj/SBSRW/releases/tag/v0.1), then
-```shell
-mv  checkpoints/checkpoint_mv mv/checkpoint
-mv  checkpoints/checkpoint_point point/checkpoint
-```
 
 ##### Generate distance matrix using Baseline-MV
 
@@ -96,6 +92,7 @@ Run the online [Colab-evaluation](https://colab.research.google.com/drive/1Baon_
     4). Set `only_best = False` to generate Fig. 12 (set `task = 1` for Fig. 12 (a) and set `task = 2` for Fig. 12 (b)); Set `only_best = True` to generate Fig. 13 (set `task = 1` for Fig. 13 (a) and set `task = 2` for Fig. 13 (b)).  
 
   
+
 
 
 ### Leaderboard
